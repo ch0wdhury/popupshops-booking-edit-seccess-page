@@ -150,137 +150,169 @@
             </div>
             <div class="col-lg-7 col-md-7">
               <div class="booking-page-navbar-area">
-                <nav class="nav btn-group" role="group">
-                  <a class="nav-link nav-link-booking-company activated" href="#booking-page-company-entry">YOUR COMPANY</a>
-                  <a class="nav-link nav-link-booking-project" href="#booking-page-project-entry">YOUR PROJECT</a>
-                  <a class="nav-link nav-link-booking-payment" href="#booking-page-payment-method">PAYMENT</a>
-                </nav>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a class="nav-link nav-link-booking-company active" href="#booking-page-company-entry" data-toggle="tab">YOUR COMPANY</a>
+                  </li>
+                  <li>
+                    <a class="nav-link nav-link-booking-project" href="#booking-page-project-entry" data-toggle="tab">YOUR PROJECT</a>
+                  </li>
+                  <li>
+                    <a class="nav-link nav-link-booking-payment" href="#booking-page-payment-method" data-toggle="tab">PAYMENT</a>
+                  </li>
+                </ul>
               </div>
                 <!-- Your Company Information Section -->
-              <div class="booking-page-company-entry-area" id="booking-page-company-entry">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="booking-page-user-login-option">
-                      <h4>I am already registered. <a href="#">Click here to log in</a></h4>
+              <div class="tab-content">
+                <div class="booking-page-company-entry-area tab-pane active" id="booking-page-company-entry">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="booking-page-user-login-option">
+                        <h4>I am already registered. <a href="#">Click here to log in</a></h4>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="booking-page-form-title">
-                      <h3>Personal</h3>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="booking-page-form-title">
+                        <h3>Personal</h3>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <form action="#" class="booking-page-form">
-                      <div class="form-row">
-                        <div class="form-group col-12">
-                          <label>E-MAIL ADDRESS</label>
-                          <input type="email" class="form-control" placeholder="e.g. Chalid">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-6">
-                          <label>FIRST NAME</label>
-                          <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-6">
-                          <label>LAST NAME</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-6">
-                          <label>PASSWORD</label>
-                          <input type="password" class="form-control">
-                        </div>
-                        <div class="form-group col-6">
-                          <label>CONFIRM PASSWORD</label>
-                          <input type="password" class="form-control">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="row mt-5">
-                  <div class="col-12">
-                    <div class="booking-page-form-title">
-                      <h3>Company</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <form action="#" class="booking-page-form">
-                      <div class="form-row">
-                        <div class="form-group col-6">
-                          <label>COMPANY NAME</label>
-                          <input type="text" class="form-control" placeholder="e.g. Chalid">
-                        </div>
-                        <div class="form-group col-6">
-                          <label>PHONE NUMBER</label>
-                          <input type="text" class="form-control" placeholder="e.g. Chalid">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-6">
-                          <label>ADDRESS 1</label>
-                          <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-6">
-                          <label>ADDRESS 2</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-6">
-                          <label>ZIP CODE</label>
-                          <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-6">
-                          <label>COUNTRY</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-6">
-                          <label>CITY</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="form-row mt-5">
-                        <div class="form-group col-12 text-right">
-                          <a type="submit" class="get-started-btn booking-page-form-btn">Continue to project</a>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-                <!-- Your Company Information Section -->
-                <!-- Your Project Information Section -->
-              <div class="booking-page-company-entry-area" id="booking-page-project-entry">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="booking-page-form-title">
-                      <h3>Your Project</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <form action="#" class="booking-page-form">
-                      <div class="form-row">
-                        <div class="form-group col-12">
-                          <label>CHOOSE A PROJECT</label>
-                          <div class="booking-page-choose-project-element">
-                            <span class="icon-plus"></span>
+                  <div class="row">
+                    <div class="col-12">
+                      <form action="#" class="booking-page-form">
+                        <div class="form-row">
+                          <div class="form-group col-12">
+                            <label>E-MAIL ADDRESS</label>
+                            <input type="email" class="form-control" placeholder="e.g. Chalid">
                           </div>
                         </div>
-                        <div class="col-12">
-                          <div class="row">
+                        <div class="form-row">
+                          <div class="form-group col-6">
+                            <label>FIRST NAME</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-6">
+                            <label>LAST NAME</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-6">
+                            <label>PASSWORD</label>
+                            <input type="password" class="form-control">
+                          </div>
+                          <div class="form-group col-6">
+                            <label>CONFIRM PASSWORD</label>
+                            <input type="password" class="form-control">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-12">
+                      <div class="booking-page-form-title">
+                        <h3>Company</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <form action="#" class="booking-page-form">
+                        <div class="form-row">
+                          <div class="form-group col-6">
+                            <label>COMPANY NAME</label>
+                            <input type="text" class="form-control" placeholder="e.g. Chalid">
+                          </div>
+                          <div class="form-group col-6">
+                            <label>PHONE NUMBER</label>
+                            <input type="text" class="form-control" placeholder="e.g. Chalid">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-6">
+                            <label>ADDRESS 1</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-6">
+                            <label>ADDRESS 2</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-6">
+                            <label>ZIP CODE</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-6">
+                            <label>COUNTRY</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-6">
+                            <label>CITY</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row mt-5">
+                          <div class="form-group col-12 text-right">
+                            <a type="submit" class="get-started-btn booking-page-form-btn">Continue to project</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                  <!-- Your Company Information Section -->
+                  <!-- Your Project Information Section -->
+                <div class="booking-page-company-entry-area tab-pane fade" id="booking-page-project-entry">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="booking-page-form-title">
+                        <h3>Your Project</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <form action="#" class="booking-page-form">
+                        <div class="form-row">
+                          <div class="form-group col-12">
+                            <label>CHOOSE A PROJECT</label>
+                            <div class="booking-page-choose-project-element">
+                              <span class="icon-plus"></span>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-lg-6 col-md-12 col-sm-6 mt-3">
+                                <button type="button" class="btn-project-template">
+                                  <div class="row">
+                                    <div class="col-3 my-auto">
+                                      <span class="icon-essentials"></span>
+                                    </div>
+                                    <div class="col-9 my-auto">
+                                     <p>Template 1</p>
+                                    <h6>Name of template</h6>
+                                    </div>
+                                  </div>
+                                </button>
+                              </div>
+                              <div class="col-lg-6 col-md-12 col-sm-6 mt-3">
+                                <button type="button" class="btn-project-template">
+                                  <div class="row">
+                                    <div class="col-3 my-auto">
+                                      <span class="icon-essentials"></span>
+                                    </div>
+                                    <div class="col-9 my-auto">
+                                     <p>Template 2</p>
+                                    <h6>Example</h6>
+                                    </div>
+                                  </div>
+                                </button>
+                              </div>
                             <div class="col-lg-6 col-md-12 col-sm-6 mt-3">
                               <button type="button" class="btn-project-template">
                                 <div class="row">
@@ -288,398 +320,373 @@
                                     <span class="icon-essentials"></span>
                                   </div>
                                   <div class="col-9 my-auto">
-                                   <p>Template 1</p>
-                                  <h6>Name of template</h6>
+                                   <p>Template 3</p>
+                                  <h6>Something longer to show here</h6>
                                   </div>
                                 </div>
                               </button>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-6 mt-3">
-                              <button type="button" class="btn-project-template">
-                                <div class="row">
-                                  <div class="col-3 my-auto">
-                                    <span class="icon-essentials"></span>
-                                  </div>
-                                  <div class="col-9 my-auto">
-                                   <p>Template 2</p>
-                                  <h6>Example</h6>
-                                  </div>
-                                </div>
-                              </button>
                             </div>
-                          <div class="col-lg-6 col-md-12 col-sm-6 mt-3">
-                            <button type="button" class="btn-project-template">
-                              <div class="row">
-                                <div class="col-3 my-auto">
-                                  <span class="icon-essentials"></span>
-                                </div>
-                                <div class="col-9 my-auto">
-                                 <p>Template 3</p>
-                                <h6>Something longer to show here</h6>
-                                </div>
+                          </div>
+                        </div>
+                        <div class="form-row mt-4">
+                          <div class="form-group col-12 d-none d-lg-block">
+                            <label>CHOOSE CONCEPT</label>
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn-concept-select">Concept Shop</button>
+                              <button type="button" class="btn-concept-select">Restaurant</button>
+                              <button type="button" class="btn-concept-select">Sale</button>
+                              <button type="button" class="btn-concept-select">Event</button>
+                              <button type="button" class="btn-concept-select">Sampling</button>
+                              <button type="button" class="btn-concept-select">Flyering</button>
+                              <button type="button" class="btn-concept-select">Car Promotion</button>
+                            </div>
+                          </div>
+                          <div class="form-group col-12 d-block d-lg-none">
+                            <label>CHOOSE CONCEPT</label>
+                            <div class=" btn-group-lg" role="group">
+                              <button type="button" class="btn-concept-select">Concept Shop</button>
+                              <button type="button" class="btn-concept-select">Restaurant</button>
+                              <button type="button" class="btn-concept-select">Sale</button>
+                              <button type="button" class="btn-concept-select">Event</button>
+                              <button type="button" class="btn-concept-select">Sampling</button>
+                              <button type="button" class="btn-concept-select">Flyering</button>
+                              <button type="button" class="btn-concept-select">Car Promotion</button>
+                            </div>
+                          </div>
+                          <div class="form-group col-12 mt-3">
+                            <label>WHAT KIND OF SHOP ARE YOU PLANNING?</label>
+                            <textarea class="form-control" cols="30" rows="6" placeholder="Enter a description"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-row mt-3">
+                          <div class="form-group col-12">
+                            <label>WHAT QUESTIONS DO YOU HAVE FOR THE OWNER?</label>
+                            <textarea class="form-control" cols="30" rows="6" placeholder="Enter a description"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-12">
+                            <div class="booking-page-form-title">
+                              <h3>Added Services</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row project-added-service-box">
+                          <div class="form-group col-2">
+                            <div class="form-check pl-0">
+                              <label class="check-container my-auto payment-check-label">
+                                <input type="checkbox">
+                                <span class="checkmark payment-terms-checkmark"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-group col-6 project-custom-check-icon">
+                            <div class="row">
+                              <div class="col-md-1 col-2 my-auto">
+                                <span class="icon-document-text"></span>
                               </div>
-                            </button>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-row mt-4">
-                        <div class="form-group col-12 d-none d-lg-block">
-                          <label>CHOOSE CONCEPT</label>
-                          <div class="btn-group" role="group">
-                            <button type="button" class="btn-concept-select">Concept Shop</button>
-                            <button type="button" class="btn-concept-select">Restaurant</button>
-                            <button type="button" class="btn-concept-select">Sale</button>
-                            <button type="button" class="btn-concept-select">Event</button>
-                            <button type="button" class="btn-concept-select">Sampling</button>
-                            <button type="button" class="btn-concept-select">Flyering</button>
-                            <button type="button" class="btn-concept-select">Car Promotion</button>
-                          </div>
-                        </div>
-                        <div class="form-group col-12 d-block d-lg-none">
-                          <label>CHOOSE CONCEPT</label>
-                          <div class=" btn-group-lg" role="group">
-                            <button type="button" class="btn-concept-select">Concept Shop</button>
-                            <button type="button" class="btn-concept-select">Restaurant</button>
-                            <button type="button" class="btn-concept-select">Sale</button>
-                            <button type="button" class="btn-concept-select">Event</button>
-                            <button type="button" class="btn-concept-select">Sampling</button>
-                            <button type="button" class="btn-concept-select">Flyering</button>
-                            <button type="button" class="btn-concept-select">Car Promotion</button>
-                          </div>
-                        </div>
-                        <div class="form-group col-12 mt-3">
-                          <label>WHAT KIND OF SHOP ARE YOU PLANNING?</label>
-                          <textarea class="form-control" cols="30" rows="6" placeholder="Enter a description"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-row mt-3">
-                        <div class="form-group col-12">
-                          <label>WHAT QUESTIONS DO YOU HAVE FOR THE OWNER?</label>
-                          <textarea class="form-control" cols="30" rows="6" placeholder="Enter a description"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-12">
-                          <div class="booking-page-form-title">
-                            <h3>Added Services</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-row project-added-service-box">
-                        <div class="form-group col-2">
-                          <div class="form-check pl-0">
-                            <label class="check-container my-auto payment-check-label">
-                              <input type="checkbox">
-                              <span class="checkmark payment-terms-checkmark"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form-group col-6 project-custom-check-icon">
-                          <div class="row">
-                            <div class="col-md-1 col-2 my-auto">
-                              <span class="icon-document-text"></span>
-                            </div>
-                            <div class="col-lg-9 col-md-10 col-8 my-auto">
-                              <h6>Deposit Insurance</h6>
-                              <p>Bespoke</p>
+                              <div class="col-lg-9 col-md-10 col-8 my-auto">
+                                <h6>Deposit Insurance</h6>
+                                <p>Bespoke</p>
+                              </div>
                             </div>
                           </div>
+                          <div class="form-group col-lg-3 col-md-2 col-2 project-custom-check-icon my-auto">
+                            <p style="font-size: 12px; font-weight: 600;">CHF 109</p>
+                          </div>
                         </div>
-                        <div class="form-group col-lg-3 col-md-2 col-2 project-custom-check-icon my-auto">
-                          <p style="font-size: 12px; font-weight: 600;">CHF 109</p>
+                        <div class="form-row mt-5">
+                          <div class="form-group col-12 text-right">
+                            <a type="submit" class="get-started-btn booking-page-form-btn">Continue to Payment method</a>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-row mt-5">
-                        <div class="form-group col-12 text-right">
-                          <a type="submit" class="get-started-btn booking-page-form-btn">Continue to Payment method</a>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-                <!-- Your Project Information Section -->
-                <!-- Your Payment Information Section -->
-              <div class="booking-page-company-entry-area" id="booking-page-payment-method">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="booking-page-form-title">
-                      <h3>Choose payment method</h3>
+                      </form>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    <form action="#" class="booking-page-form">
-                      <div class="form-row">
-                        <div class="form-check col-12">
-                          <div class="radio">
-                            <label class="payment-radio-label">
-                              <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardOne">
-                                <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
-                                  MasterCard *** 9402
-                            </label>
-                              <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                  <div id="collapseCardOne" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                      <form action="#" class="booking-page-form">
-                                        <div class="form-row">
-                                          <div class="form-group col-12 mt-3">
-                                            <label>CARD NUMBER</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12 mt-3">
-                                            <label>NAME ON THE CARD</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>EXPIRY DATE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>CVV CODE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12">
-                                            <div class="custom-control custom-switch save-card-switch">
-                                              <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                              <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="radio">
-                            <label class="payment-radio-label">
-                              <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardTwo">
-                              <span class="cr"><i class="cr-icon"></i></span> <span class="icon-credit-card cc-icon-payment"></span>
-                                  New card
-                            </label>
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                  <div id="collapseCardTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                      <form action="#" class="booking-page-form">
-                                        <div class="form-row">
-                                          <div class="form-group col-12 mt-3">
-                                            <label>CARD NUMBER</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12 mt-3">
-                                            <label>NAME ON THE CARD</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>EXPIRY DATE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>CVV CODE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12">
-                                            <div class="custom-control custom-switch save-card-switch">
-                                              <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
-                                              <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="radio">
-                            <label class="payment-radio-label">
-                              <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardThree">
-                                <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
-                                  PostFinance
-                            </label>
-                              <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                  <div id="collapseCardThree" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                      <form action="#" class="booking-page-form">
-                                        <div class="form-row">
-                                          <div class="form-group col-12 mt-3">
-                                            <label>CARD NUMBER</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12 mt-3">
-                                            <label>NAME ON THE CARD</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>EXPIRY DATE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>CVV CODE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12">
-                                            <div class="custom-control custom-switch save-card-switch">
-                                              <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                              <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="radio">
-                            <label class="payment-radio-label">
-                              <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardFour">
-                                <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
-                                  GiroPay
-                            </label>
-                              <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                  <div id="collapseCardFour" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                      <form action="#" class="booking-page-form">
-                                        <div class="form-row">
-                                          <div class="form-group col-12 mt-3">
-                                            <label>CARD NUMBER</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12 mt-3">
-                                            <label>NAME ON THE CARD</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>EXPIRY DATE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>CVV CODE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12">
-                                            <div class="custom-control custom-switch save-card-switch">
-                                              <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                              <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="radio">
-                            <label class="payment-radio-label">
-                              <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardFive">
-                                <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
-                                  SEPA Direct Credit
-                            </label>
-                              <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                  <div id="collapseCardFive" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                      <form action="#" class="booking-page-form">
-                                        <div class="form-row">
-                                          <div class="form-group col-12 mt-3">
-                                            <label>CARD NUMBER</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12 mt-3">
-                                            <label>NAME ON THE CARD</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>EXPIRY DATE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>CVV CODE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12">
-                                            <div class="custom-control custom-switch save-card-switch">
-                                              <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                              <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="radio">
-                            <label class="payment-radio-label">
-                              <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardSix">
-                                <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
-                                  Klarna Sofort
-                            </label>
-                              <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                  <div id="collapseCardSix" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                      <form action="#" class="booking-page-form">
-                                        <div class="form-row">
-                                          <div class="form-group col-12 mt-3">
-                                            <label>CARD NUMBER</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12 mt-3">
-                                            <label>NAME ON THE CARD</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>EXPIRY DATE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-6 mt-3">
-                                            <label>CVV CODE</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group col-12">
-                                            <div class="custom-control custom-switch save-card-switch">
-                                              <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                              <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="form-group col-12 mt-4">
-                          <div class="form-check pl-0">
-                            <label class="check-container my-auto payment-check-label">I accept the Terms of Use, Booking Terms and confirm that I have or will cover liability insurance.
-                              <input type="checkbox">
-                              <span class="checkmark payment-terms-checkmark"></span>
-                            </label>
-                          </div>
-                        </div>
+                  <!-- Your Project Information Section -->
+                  <!-- Your Payment Information Section -->
+                <div class="booking-page-company-entry-area tab-pane fade" id="booking-page-payment-method">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="booking-page-form-title">
+                        <h3>Choose payment method</h3>
                       </div>
-                      <div class="form-row mt-5">
-                        <div class="form-group col-12 text-right">
-                          <a type="submit" class="get-started-btn booking-page-form-btn">Submit your booking request</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <form action="#" class="booking-page-form">
+                        <div class="form-row">
+                          <div class="form-check col-12">
+                            <div class="radio">
+                              <label class="payment-radio-label">
+                                <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardOne">
+                                  <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
+                                    MasterCard *** 9402
+                              </label>
+                                <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div id="collapseCardOne" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <form action="#" class="booking-page-form">
+                                          <div class="form-row">
+                                            <div class="form-group col-12 mt-3">
+                                              <label>CARD NUMBER</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12 mt-3">
+                                              <label>NAME ON THE CARD</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>EXPIRY DATE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>CVV CODE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <div class="custom-control custom-switch save-card-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="radio">
+                              <label class="payment-radio-label">
+                                <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardTwo">
+                                <span class="cr"><i class="cr-icon"></i></span> <span class="icon-credit-card cc-icon-payment"></span>
+                                    New card
+                              </label>
+                              <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div id="collapseCardTwo" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <form action="#" class="booking-page-form">
+                                          <div class="form-row">
+                                            <div class="form-group col-12 mt-3">
+                                              <label>CARD NUMBER</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12 mt-3">
+                                              <label>NAME ON THE CARD</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>EXPIRY DATE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>CVV CODE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <div class="custom-control custom-switch save-card-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+                                                <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="radio">
+                              <label class="payment-radio-label">
+                                <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardThree">
+                                  <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
+                                    PostFinance
+                              </label>
+                                <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div id="collapseCardThree" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <form action="#" class="booking-page-form">
+                                          <div class="form-row">
+                                            <div class="form-group col-12 mt-3">
+                                              <label>CARD NUMBER</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12 mt-3">
+                                              <label>NAME ON THE CARD</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>EXPIRY DATE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>CVV CODE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <div class="custom-control custom-switch save-card-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="radio">
+                              <label class="payment-radio-label">
+                                <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardFour">
+                                  <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
+                                    GiroPay
+                              </label>
+                                <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div id="collapseCardFour" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <form action="#" class="booking-page-form">
+                                          <div class="form-row">
+                                            <div class="form-group col-12 mt-3">
+                                              <label>CARD NUMBER</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12 mt-3">
+                                              <label>NAME ON THE CARD</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>EXPIRY DATE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>CVV CODE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <div class="custom-control custom-switch save-card-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="radio">
+                              <label class="payment-radio-label">
+                                <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardFive">
+                                  <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
+                                    SEPA Direct Credit
+                              </label>
+                                <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div id="collapseCardFive" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <form action="#" class="booking-page-form">
+                                          <div class="form-row">
+                                            <div class="form-group col-12 mt-3">
+                                              <label>CARD NUMBER</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12 mt-3">
+                                              <label>NAME ON THE CARD</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>EXPIRY DATE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>CVV CODE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <div class="custom-control custom-switch save-card-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="radio">
+                              <label class="payment-radio-label">
+                                <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardSix">
+                                  <span class="cr"><i class="cr-icon"></i></span> <img src="images/mastercard.png" class="img-fluid" alt="">
+                                    Klarna Sofort
+                              </label>
+                                <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div id="collapseCardSix" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <form action="#" class="booking-page-form">
+                                          <div class="form-row">
+                                            <div class="form-group col-12 mt-3">
+                                              <label>CARD NUMBER</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12 mt-3">
+                                              <label>NAME ON THE CARD</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>EXPIRY DATE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-6 mt-3">
+                                              <label>CVV CODE</label>
+                                              <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group col-12">
+                                              <div class="custom-control custom-switch save-card-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                <label class="custom-control-label save-card-control-label" for="customSwitch2">Save card for future use</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="form-group col-12 mt-4">
+                            <div class="form-check pl-0">
+                              <label class="check-container my-auto payment-check-label">I accept the Terms of Use, Booking Terms and confirm that I have or will cover liability insurance.
+                                <input type="checkbox">
+                                <span class="checkmark payment-terms-checkmark"></span>
+                              </label>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </form>
+                        <div class="form-row mt-5">
+                          <div class="form-group col-12 text-right">
+                            <a type="submit" class="get-started-btn booking-page-form-btn">Submit your booking request</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
+                  <!-- Your Payment Information Section -->
               </div>
-                <!-- Your Payment Information Section -->
             </div>
           </div>
         </div>
