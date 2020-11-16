@@ -368,6 +368,11 @@
 		height: 30px;
 		width: 30px;
 	}
+	.listing-page-space-feature img {
+		padding: 8px;
+		height: 30px;
+		width: 30px;
+	}	
 	.listing-page-space-feature h5 {
 		font-size: 12px;
 		line-height: 14px;
@@ -420,6 +425,24 @@
 	}
 	.radio {
 		padding: 16px 14px 16px 14px;
+	}
+	.file-upload-panel h4 {
+		position: absolute;
+		top: 25%;
+		left: 20px;
+	}
+	.file-upload-panel p {
+		padding-left: 15px;
+	}
+	.add-files-btn {
+		position: absolute;
+		bottom: 0;
+		left: 15px;
+	}
+	.start-upload-btn {
+		position: absolute;
+		bottom: 0;
+		left: 140px;
 	}
 }
 
@@ -635,7 +658,11 @@
 		width: 650px;
 	}
 	.save-search-float-section {
-		width: 100%;
+		width: 98%;
+		position: absolute;
+		bottom: -10px;
+		margin-left: 5px;
+		padding: 10px 10px 10px 20px;
 	}
 	.save-search-modal-body {
 		padding: 40px 70px;
@@ -850,7 +877,7 @@
 		margin-top: 10px;
 	}
 	.search-page-result {
-		height: 68%;
+		height: 80vh;
 	}
 	.search-page-result-image img {
 		height: auto;
@@ -912,15 +939,14 @@
 	    margin-top: 0px;
 	    width: 100%;
 	}
-	.city-search-result-content-map {
-	    padding-left: 0;
-	    padding-right: 0;
-	    height: 100%;
-	}
-	.search-page-result {
+/*	.search-page-result {
 		height: 100%;
 		width: 100%;
 		position: relative;
+	}*/
+	.city-search-result-content-map {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.listing-page-main-title h2 {
 		font-size: 30px;
@@ -954,6 +980,9 @@
 	}
 	.booking-page-navbar-area .nav .nav-link {
 		font-size: 12px;
+	}
+	.btn-concept-select {
+		padding: 12px 8px!important;
 	}
 }
 
@@ -1077,6 +1106,9 @@
 	.listing-page-calendar {
 	    padding: 30px 10px;
 	    width: 112%;
+	}
+	.btn-concept-select {
+		padding: 12px 8px!important;
 	}
 }
 

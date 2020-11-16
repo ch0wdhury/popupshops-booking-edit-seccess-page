@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/media.css">
 
     <title>Booking Edit and Success Page</title>
+
   </head>
   <body>
       <!-- Header Section Starts Here -->
@@ -330,28 +331,56 @@
                           </div>
                         </div>
                         <div class="form-row mt-4">
-                          <div class="form-group col-12 d-none d-lg-block">
+                          <div class="form-group col-12 d-lg-block d-none">
                             <label>CHOOSE CONCEPT</label>
-                            <div class="btn-group" role="group">
-                              <button type="button" class="btn-concept-select">Concept Shop</button>
-                              <button type="button" class="btn-concept-select">Restaurant</button>
-                              <button type="button" class="btn-concept-select">Sale</button>
-                              <button type="button" class="btn-concept-select">Event</button>
-                              <button type="button" class="btn-concept-select">Sampling</button>
-                              <button type="button" class="btn-concept-select">Flyering</button>
-                              <button type="button" class="btn-concept-select">Car Promotion</button>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                              <label class="btn btn-concept-select active">
+                                <input type="radio" checked> Concept Shop
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Restaurant
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Sale
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Event
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Sampling
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Flyering
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Car Promotion
+                              </label>
                             </div>
                           </div>
-                          <div class="form-group col-12 d-block d-lg-none">
+                          <div class="form-group col-12 d-lg-none d-block">
                             <label>CHOOSE CONCEPT</label>
-                            <div class=" btn-group-lg" role="group">
-                              <button type="button" class="btn-concept-select">Concept Shop</button>
-                              <button type="button" class="btn-concept-select">Restaurant</button>
-                              <button type="button" class="btn-concept-select">Sale</button>
-                              <button type="button" class="btn-concept-select">Event</button>
-                              <button type="button" class="btn-concept-select">Sampling</button>
-                              <button type="button" class="btn-concept-select">Flyering</button>
-                              <button type="button" class="btn-concept-select">Car Promotion</button>
+                            <div class="btn-group-lg btn-group-toggle" data-toggle="buttons">
+                              <label class="btn btn-concept-select active">
+                                <input type="radio" checked> Concept Shop
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Restaurant
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Sale
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Event
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Sampling
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Flyering
+                              </label>
+                              <label class="btn btn-concept-select">
+                                <input type="radio"> Car Promotion
+                              </label>
                             </div>
                           </div>
                           <div class="form-group col-12 mt-3">
@@ -365,7 +394,20 @@
                             <textarea class="form-control" cols="30" rows="6" placeholder="Enter a description"></textarea>
                           </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-row mt-3">
+                          <div class="form-group file-upload-panel col-12">
+                            <label>DOCUMENTS</label>
+                              <input type="file" multiple>
+                                <h4>Drag & Drop</h4>
+                                <p class="uploaded-file-select">Please add the desired documents to your booking request, e.g. a brochure or a shop concept.</p>
+                                <div class="upload-btn-wrapper">
+                                  <button class="upload-files-btn add-files-btn">+ Add Files</button>
+                                  <input type="file" />
+                                </div>
+                                <button type="submit" class="upload-files-btn start-upload-btn">Start upload</button>
+                          </div>
+                        </div>
+                        <div class="form-row mt-5">
                           <div class="col-12">
                             <div class="booking-page-form-title">
                               <h3>Added Services</h3>
@@ -419,7 +461,7 @@
                     <div class="col-12">
                       <form action="#" class="booking-page-form">
                         <div class="form-row">
-                          <div class="form-check col-12">
+                          <div class="form-check col-12" id="payment-radio-check">
                             <div class="radio">
                               <label class="payment-radio-label">
                                 <input type="radio" name="o5" value="" data-toggle="collapse" data-target="#collapseCardOne">
@@ -428,7 +470,7 @@
                               </label>
                                 <div class="panel-group" id="accordion">
                                   <div class="panel panel-default">
-                                    <div id="collapseCardOne" class="panel-collapse collapse">
+                                    <div id="collapseCardOne" class="panel-collapse collapse" data-parent="#payment-radio-check">
                                       <div class="panel-body">
                                         <form action="#" class="booking-page-form">
                                           <div class="form-row">
@@ -469,7 +511,7 @@
                               </label>
                               <div class="panel-group" id="accordion">
                                   <div class="panel panel-default">
-                                    <div id="collapseCardTwo" class="panel-collapse collapse">
+                                    <div id="collapseCardTwo" class="panel-collapse collapse" data-parent="#payment-radio-check">
                                       <div class="panel-body">
                                         <form action="#" class="booking-page-form">
                                           <div class="form-row">
@@ -510,7 +552,7 @@
                               </label>
                                 <div class="panel-group" id="accordion">
                                   <div class="panel panel-default">
-                                    <div id="collapseCardThree" class="panel-collapse collapse">
+                                    <div id="collapseCardThree" class="panel-collapse collapse" data-parent="#payment-radio-check">
                                       <div class="panel-body">
                                         <form action="#" class="booking-page-form">
                                           <div class="form-row">
@@ -551,7 +593,7 @@
                               </label>
                                 <div class="panel-group" id="accordion">
                                   <div class="panel panel-default">
-                                    <div id="collapseCardFour" class="panel-collapse collapse">
+                                    <div id="collapseCardFour" class="panel-collapse collapse" data-parent="#payment-radio-check">
                                       <div class="panel-body">
                                         <form action="#" class="booking-page-form">
                                           <div class="form-row">
@@ -592,7 +634,7 @@
                               </label>
                                 <div class="panel-group" id="accordion">
                                   <div class="panel panel-default">
-                                    <div id="collapseCardFive" class="panel-collapse collapse">
+                                    <div id="collapseCardFive" class="panel-collapse collapse" data-parent="#payment-radio-check">
                                       <div class="panel-body">
                                         <form action="#" class="booking-page-form">
                                           <div class="form-row">
@@ -633,7 +675,7 @@
                               </label>
                                 <div class="panel-group" id="accordion">
                                   <div class="panel panel-default">
-                                    <div id="collapseCardSix" class="panel-collapse collapse">
+                                    <div id="collapseCardSix" class="panel-collapse collapse" data-parent="#payment-radio-check">
                                       <div class="panel-body">
                                         <form action="#" class="booking-page-form">
                                           <div class="form-row">
@@ -865,6 +907,7 @@
     <script src="js/chartkick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
     <script src="js/script.js"></script>
     <script>
       $('.city-details-places').slick({
@@ -1019,6 +1062,8 @@
         $(".listing-booking-collapse-btn").html('Hide breakdown <span class="icon-chevron-up float-right mt-2" style="  font-weight: 300;font-size: 10px;color: #9AA09E;"></span>');
       });
     });
+
+
 
 
     $("[data-toggle=popover]").popover({
@@ -1432,6 +1477,9 @@
     }
 });
 
+  $('.file-upload-panel input').change(function () {
+    $('.uploaded-file-select').text(this.files.length + " file(s) selected");
+  });
     </script>
 
 

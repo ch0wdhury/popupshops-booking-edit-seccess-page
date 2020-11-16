@@ -1,14 +1,14 @@
 html, body {
 	overflow-x: hidden;
 	font-family: 'Manrope', sans-serif;
-	height: 100%;
+	/*height: 100vh;*/
 	scroll-behavior: smooth;
 }
 * {
 	margin: 0;
 	padding: 0;
 }
-*::-webkit-scrollbar {
+/**::-webkit-scrollbar {
     cursor: default;
     height: 0.25rem;
     width: 0.25rem;
@@ -20,7 +20,7 @@ html, body {
 *::-webkit-scrollbar-thumb {
     background-color: #18bc9c;
     border-radius: 0.25rem;
-}
+}*/
 a {
 	text-decoration: none;
 	transition: .5s ease;
@@ -1406,6 +1406,75 @@ div.custom-control-right .custom-control-label::before {
 }
 /*City Search Result Section Ends Here*/
 /*Search Results Page Section Starts Here*/
+#full-height-page {
+	height: 100vh;
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    overflow: hidden;
+    max-width: 125px;
+    text-overflow: ellipsis;
+}
+.bootstrap-select.show-tick .dropdown-menu span.check-mark {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    height: 23px;
+    width: 23px;
+    background-color: #fff;
+    color: transparent;
+	border: 2px solid #D8D8D4;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px rgba(218, 227, 225, 0.1), inset 0px -1px 1px rgba(218, 227, 225, 0.15);
+	border-radius: 4px;
+	display: block!important;
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    height: 23px;
+    width: 23px;
+    background-color: #18BC9C;
+	border: 2px solid #18BC9C;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px rgba(218, 227, 225, 0.1), inset 0px -1px 1px rgba(218, 227, 225, 0.15);
+	border-radius: 4px;
+	display: inline-block!important;
+}
+.bootstrap-select .dropdown-menu li a span.check-mark {
+    display: none;
+}
+.bootstrap-select .dropdown-item .selected >  .dropdown-menu li a span.check-mark {
+	display: block;
+}
+.bootstrap-select.show-tick .dropdown-menu li a span.text {
+    margin-left: 25px;
+}
+.bootstrap-select>.dropdown-menu.show {
+    width: auto!important;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark:after {
+ 	content: "";
+ 	position: absolute;
+ 	display: block;
+ 	top: 2px;
+ 	left: 6px;
+ 	font-size: 12px;
+ 	color: #fff!important;
+}
+/* Style the checkmark/indicator */
+.filter-check-container .checkmark:after {
+	left: 7px;
+	top: 4px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 /*Search Page Filter Styling*/
 .btn-filter {
 	background-color: #fff;
@@ -1539,26 +1608,47 @@ div.custom-control-right .custom-control-label::before {
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
     display: none;
 }
+.for-padding-24 {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
 .search-page-result {
-	height: 80vh;
-	width: 100%;
-	position: relative;
+	height: 84vh;
+	overflow: hidden;
 }
 .search-page-left-content {
+	position: relative;
+/*	height: 84vh;
+	overflow: hidden;
+	overflow-x: hidden;*/
+}
+.search-page-left-content-full-wrapper {
+	
+}
+.city-search-result-content-map {
 	position: absolute;
-	overflow-x: hidden;
-	left: 0;
+	right: 0;
 	top: 0;
-	margin-left: 40px;
+	float: right;
+	height: 84vh;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+#map {
+	position: sticky;
+	top: 0;
+	right: 0;
 	height: 100%;
-	overflow-y: auto;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
 }
 .search-page-city-content {
 	border-bottom: 1px solid #EAEAE7;
 	padding-bottom: 10px;
 	margin-top: 20px;
-	width: 95%;
-	position: relative;
+	width: 100%;
 }
 .search-page-city-content-layout-2 {
 	border-bottom: none;
@@ -1625,7 +1715,7 @@ div.custom-control-right .custom-control-label::before {
 	border-left: 2px solid #18BC9C;
 	padding: 20px 20px 20px 30px;
 	background-color: #fff;
-	position: sticky;
+	position: absolute;
 	bottom: 2%;
 	left: 0;
 	width: 97%;
@@ -1728,15 +1818,6 @@ div.custom-control-right .custom-control-label::before {
 }
 .save-search-modal-body input::placeholder {
 	color: #BABDB7;
-}
-.city-search-result-content-map {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding-left: 0;
-	padding-right: 0;
 }
 .mapboxgl-canvas:focus {
     border: none;
@@ -1958,8 +2039,8 @@ div.custom-control-right .custom-control-label::before {
 	color: #18BC9C;
 }
 .features-icon-list {
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .listing-page-space-feature span {
 	font-size: 18px;
@@ -1967,6 +2048,14 @@ div.custom-control-right .custom-control-label::before {
 	padding: 14px;
 	height: 48px;
 	width: 48px;
+	border-radius: 4px;
+	background-color: #E4F4F1;
+}
+.listing-page-space-feature img {
+	color: #18BC9C;
+	padding: 13px;
+	height: 46px;
+	width: 46px;
 	border-radius: 4px;
 	background-color: #E4F4F1;
 }
@@ -2399,6 +2488,11 @@ button.switch-month:active {
 	font-size: 12px;
 	color: #393F3E;
 }
+.listing-booking-collapse-left-content p a:focus {
+	box-shadow: none!important;
+	border: none!important;
+	outline: none!important;
+}
 .listing-booking-collapse-right-content p {
 	font-weight: 500;
 	font-size: 14px;
@@ -2725,17 +2819,20 @@ button.switch-month:active {
 	color: #393F3E;
 }
 .btn-concept-select {
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 16px;
+	font-weight: 700!important;
+	font-size: 12px!important;
+	line-height: 16px!important;
 	color: #747978;
-	background: #FFFFFF;
+	vertical-align: middle;
+	margin: auto;
+	background: #F9F9F8;
+	text-transform: capitalize!important;
 	border: 1px solid #DAE3E1;
 	box-shadow: 0px 2px 2px rgba(218, 227, 225, 0.1), inset 0px -1px 1px rgba(218, 227, 225, 0.15);
-	border-radius: 4px 0px 0px 4px;
-	padding: 12px 15px;
+	border-radius: 4px 0px 0px 4px!important;
+	padding: 12px 15px!important;
 }
-.btn-concept-select:focus {
+.btn-concept-select:focus, .btn-concept-select.active {
 	color: #393F3E;
 	background: #FFFFFF;
 	border: 1px solid #DAE3E1;
@@ -2766,6 +2863,83 @@ button.switch-month:active {
 	line-height: 16px;
 	color: #9AA09E;
 	margin: 0;
+}
+.file-upload-panel h4 {
+	position: absolute;
+	top: 30%;
+	left: 40px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #393F3E;
+}
+.file-upload-panel p {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 35px;
+	padding-right: 20px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	color: #747978;
+	background: #F9F9F8;
+	border: 1px dashed #D8D8D4;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px rgba(218, 227, 225, 0.1), inset 0px -1px 1px rgba(218, 227, 225, 0.15);
+	border-radius: 4px;
+}
+.file-upload-panel input {
+	position: absolute;
+	margin: 0;
+	padding: 20px 48px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+}
+.upload-files-btn {
+	position: absolute;
+	bottom: 0;
+ 	margin: 0;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 16px;
+	background: #FFFFFF;
+	color: #393F3E;
+	padding: 12px 24px;
+	border: 1px solid #D8D8D4;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.add-files-btn {
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+}
+.start-upload-btn {
+	position: absolute;
+	bottom: 0;
+	left: 180px;
+}
+.upload-files-btn:hover, .upload-files-btn:active {
+	background: #FFFFFF;
+	color: #393F3E;
+	border: 1px solid #D8D8D4;
+}
+.upload-btn-wrapper {
+	overflow: hidden;
+}
+.upload-btn-wrapper input[type=file] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	pointer-events: auto!important;
 }
 /*Project Styling*/
 /*Payment Styling*/
